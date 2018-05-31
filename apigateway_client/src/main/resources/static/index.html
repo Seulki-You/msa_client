@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1150, user-scalable=no">
+    <title>Piggy Metrics</title>
+    <link rel="stylesheet" type="text/css" href="css/launch.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <style>
+        #bubble, #indicator, #save, #piggyicon, #rublesign, .arrowup, .arrowdown, .incomes-sprite-title, .close-sign, .modal-save-icon,
+        #modaldeletecross, .initicons-arrow, .expenses-sprite-title, .savings-sprite-title, .triangle, .noUi-handle, .noUi-handle:after  {
+            background-image: url("images/sprites.png");
+            background-size: 538px 84px;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-resolution: 144dpi) {
+            #bubble, #indicator, #save, #piggyicon, #rublesign, .arrowup, .arrowdown, .incomes-sprite-title, .close-sign, .modal-save-icon,
+            #modaldeletecross, .initicons-arrow, .expenses-sprite-title, .savings-sprite-title, .triangle, .noUi-handle, .noUi-handle:after {
+                background-image: url("images/sprites@2x.png");
+            }
+        }
+    </style>
+</head>
+    <body>
+
+        <div id="settings_hat"></div>
+
+        <div id="lastlogo">
+            <div id="lastlogoflipper">
+                <div id="logo_settings">
+                    <div id="logoclickplace"></div><div id="bubble"><div id="indicator"></div></div>
+                </div>
+                <div id="logo_statistic"></div>
+            </div>
+        </div>
+
+        <section class="toppage">
+
+            <!-- GREETING PAGE -->
+		<div id="logo_greeting">
+				<form id="logout" autocomplete="off">
+					<div id="minus">
+						<div id="minustext">Log out</div>
+					</div>
+				</form>
+				<div id="user_alarm">
+					<div id="user_alarm_text">notice</div>
+				</div>
+				<div id="user_profile">
+					<div id="user_profile_text"></div>
+				</div>
+		</div>
+		<div id="centerbox">
+                <div id="avatarcontainer" class="forward plus">
+                    <div class="avatar"></div>
+                </div>
+            </div>
+            <div id="lefttitle"><span class="bluetext"> metrics</span></div>
+            <div id="righttitle"><span class="bluetext">last seen: </span></div>
+            <div id="bottombuttons">
+                <div id="plus" class="plus">
+                    <div id="plusborder">
+                        <div id="plusone"></div>
+                        <div id="plustwo"></div>
+                    </div>
+                    <div id="plustext">Get in</div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- LAST PAGE -->
+
+
+        <section id="loginpage">
+            <div id="flipper">
+                <div class="FRONTCARD">
+                    <div id="piggy"></div>
+                    <div id="logotext"></div>
+                    <div class="flipinfo" id="info"></div>
+                    <div id="secondenter"></div>
+                    <div id="preloader"></div>
+                    <div id="wrapper">
+                        <!-- LOG IN FORMS -->
+                        <div id="cube">
+                            <form action="user/login" id="auth" method="post" autocomplete="off">
+                                <div class="side" id="side1">
+                                    <div id="backlogin"></div>
+                                    <div id="enter"></div>
+                                    <input class="frontforms" id="frontloginform" name="username" placeholder="enter your login" type="text" autocomplete="off"/>
+                                </div>
+                                <div class="side" id="side2">
+                                    <div id="backpassword"></div>
+                                    <input class="frontforms" id="frontpasswordform" name="password" placeholder="password" type="password" autocomplete="off"/>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="fliptext">Or <a href="#">create new account</a></div>
+                </div>
+				
+				<div class="BACKCARD">
+                    <div id="regpage">
+                        <div id="franklin">
+                            <div class="avatar"></div>
+                        </div>
+                        <div id="createaccount"></div>
+                        <div class="fliptext">Or <a href="#">use existing account</a></div>
+                        <div id="registrationforms">
+                            <form id="signup" autocomplete="off">
+                                <input class="backforms" name="username" id="backloginform" placeholder=" id" type="text"/><br>
+                                <input class="backforms" name="password" id="backpasswordform" placeholder=" password" type="password"/><br>
+                                <input class="backforms" name="name" id="backnameform" placeholder=" name" type="text"/><br>
+                                <input class="backforms" name="email" id="backemailform" placeholder="email" type="text"/>
+                                <button class="regbutton" type="submit" name="registration">r e g i s t e r</button>
+                            </form>
+                        </div>
+                        <div id="regcomplete">
+                            <span class="regthanks">가입해주셔서 감사합니다.<br>
+                                <span class="regthankssmall">
+                                </span>
+                            </span>
+                            <div id="mvmain"><a href="#">홈으로 이동</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/touchscreens.js"></script>
+        <script src="js/lib/extrascripts.js"></script>
+
+        <script src="js/dashboard.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/login.js" charset="utf-8"></script>
+        <script src="js/launch.js" charset="utf-8"></script>
+
+    </body>
+</html>
