@@ -220,6 +220,8 @@ only screen and (min-resolution: 144dpi) {
 	top:10px;
 	width:100%;
 	height:7%;
+	display: none;
+	
 }
 #logo_settings, #logo_statistic {
 	-webkit-backface-visibility: hidden;

@@ -52,11 +52,11 @@ $('#minus').click(function() {
 });
 
 $('#user_alarm_text').click(function() {
-    logout();
+    getAlarm();
 });
 
 $('#user_profile').click(function() {
-    logout();
+    getProfile();
 });
 
 
@@ -103,23 +103,23 @@ function initGreetingPage() {
     });
 
     // Init statisctic page first time
-    expensesSumMonth = 0; incomesSumMonth = 0;
+   // expensesSumMonth = 0; incomesSumMonth = 0;
     $("#circle-select-1, #circle-select-2, #circle-select-3").empty();
-    getConverted(incomes);
-    getConverted(expenses);
+  //  getConverted(incomes);
+  //  getConverted(expenses);
 
-    initStatisticPage();
-    setTimeout(function() { initSavingsCircles(user.checkedPercent, 0.2, savings.freeMoney, savings.freeMoney, 700) }, 200);
-    initSavingsSlider();
-    $("#savings-slider").data({"checkedPercent": user.checkedPercent});
+    //initStatisticPage();
+  //  setTimeout(function() { initSavingsCircles(user.checkedPercent, 0.2, savings.freeMoney, savings.freeMoney, 700) }, 200);
+   // initSavingsSlider();
+   // $("#savings-slider").data({"checkedPercent": user.checkedPercent});
 
-    $("#lefttitle").prepend(escape(user.login));
-    $("#righttitle").append(user.lastSeen);
+  //  $("#lefttitle").prepend(escape(user.login));
+    //$("#righttitle").append(user.lastSeen);
 
     // Fill data on settings page beforehand
-    addSavings();
-    addItems();
-    addNotes();
+   // addSavings();
+  //  addItems();
+   // addNotes();
 }
 
 function initSettingsPage() {
