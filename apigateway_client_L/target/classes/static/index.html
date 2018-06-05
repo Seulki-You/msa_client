@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1150, user-scalable=no">
+<title>KCC_MSA_BBS</title>
+<link rel="stylesheet" type="text/css" href="css/launch.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animation.css">
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" type="text/css" href="css/min.css">
+<link rel="stylesheet" type="text/css" href="css/roboto.css">
+<style>
+#bubble, #indicator, #save, #piggyicon, #rublesign, .arrowup, .arrowdown,
+	.incomes-sprite-title, .close-sign, .modal-save-icon, #modaldeletecross,
+	.initicons-arrow, .expenses-sprite-title, .savings-sprite-title,
+	.triangle, .noUi-handle, .noUi-handle:after {
+	background-image: url("images/sprites.png");
+	background-size: 538px 84px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) , only
+	screen and (min-resolution: 144dpi) {
+	#bubble, #indicator, #save, #piggyicon, #rublesign, .arrowup, .arrowdown,
+		.incomes-sprite-title, .close-sign, .modal-save-icon,
+		#modaldeletecross, .initicons-arrow, .expenses-sprite-title,
+		.savings-sprite-title, .triangle, .noUi-handle, .noUi-handle:after {
+		background-image: url("images/sprites@2x.png");
+	}
+}
+</style>
+</head>
+<body>
+
+	<div id="settings_hat"></div>
+
+
+
+	<section class="toppage">
+
+		<!-- GREETING PAGE -->
+		<div id="logo_greeting">
+			<form id="logout" autocomplete="off">
+				<div id="minus">
+					<div id ="minustext">Log out</div>
+				</div>
+			</form>
+			<div id="user_alarm">
+				<div id="user_alarm_text">notice</div>
+			</div>
+			<div id="user_profile">
+				<div id="user_profile_text"></div>
+			</div>
+			<br>
+			<hr style="vertical-align: bottom ">
+		</div>
+		
+		<div id="lastlogo">
+
+		</div>
+		
+		<div id="centerbox">
+		<hr>
+			<!-- Left Column -->
+			<div class="w3-third">
+
+				<div class="w3-white w3-text-grey w3-card-4">
+
+					<div class="w3-container-2">
+						<h2 id = "main_id">
+							<i
+								class=" w3-margin-right w3-large w3-text-teal"></i>
+						</h2>
+						<hr>
+						<p id = 'main_name'>
+							<i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+						</p >
+						<p id = "main_email">
+							<i
+								class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
+						</p>
+						<hr>
+						<button class="regbutton" type="button" id="managestory" > 내 스 토 리 관 리 </button>
+						<br>
+					</div>
+				</div>
+				<br>
+
+				<!-- End Left Column -->
+			</div>
+			<!-- Right Column -->
+			<div class="w3-twothird">
+
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i
+							class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work
+						Experience
+					</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Front End Developer / w3schools.com</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
+								class="w3-tag w3-teal w3-round">Current</span>
+						</h6>
+						<p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur
+							vel in deserunt aspernatur est reprehenderit sunt hic. Nulla
+							tempora soluta ea et odio, unde doloremque repellendus iure,
+							iste.</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Web Developer / something.com</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 -
+							Dec 2014
+						</h6>
+						<p>Consectetur adipisicing elit. Praesentium magnam
+							consectetur vel in deserunt aspernatur est reprehenderit sunt
+							hic. Nulla tempora soluta ea et odio, unde doloremque repellendus
+							iure, iste.</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>Graphic Designer / designsomething.com</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 -
+							Mar 2012
+						</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<br>
+					</div>
+				</div>
+
+				<div class="w3-container w3-card w3-white">
+					<h2 class="w3-text-grey w3-padding-16">
+						<i
+							class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+					</h2>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>W3Schools.com</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever
+						</h6>
+						<p>Web Development! All I need to know in one place</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>London Business School</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
+						</h6>
+						<p>Master Degree</p>
+						<hr>
+					</div>
+					<div class="w3-container">
+						<h5 class="w3-opacity">
+							<b>School of Coding</b>
+						</h5>
+						<h6 class="w3-text-teal">
+							<i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
+						</h6>
+						<p>Bachelor Degree</p>
+						<br>
+					</div>
+				</div>
+
+				<!-- End Right Column -->
+			</div>
+		</div>
+
+	</section>
+	
+	<!-- notice page -->
+	<div id="mask"></div>
+	<div id="notice_popup">
+		<div class="popup_close"><a id="popup_close_text" href="#" >X close</a></div>
+		<div class="w3-third">
+				<div class="w3-white w3-text-grey w3-card-4 ">
+					<div id="notice_box" class="w3-container-1">
+					<hr>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+	<!-- user page -->
+	<div id="user_popup">
+		<div class="popup_close"><a id="popup_close_text" href="#" >X close</a></div>
+		<div class="w3-third-1">
+			<h2>회원 정보 수정</h2>
+			<hr>
+			<form id="editinfo" method="post">
+			<h3>이름</h3>
+			<input class="frontforms" name="name" id="editnameform"
+									value="" type="text" autocomplete="off" />
+			<hr>
+			<h3>이메일</h3>
+			<input class="frontforms" name="email" id="editemailform"
+									value="" type="text" autocomplete="off" />
+			<hr>
+			<button class="regbutton" type="submit" name="edit"> 수 정 하 기 </button>
+			</form>
+			<button class="regbutton" type="button" id="deleteUser" > 계 정 삭 제 </button>
+
+		</div>
+	</div>
+	<!-- myStoryPopUp -->
+	<div id="myStoryPopUp">
+		<div id="closeButton">
+		 X
+		</div>
+		<div id="postStory">
+		
+			<form id = "addStory">
+				
+			 		<input class="frontforms" id="postMessage" name="message" placeholder="enter your story" type="text" autocomplete="off">
+	
+				<br>
+				<button class="regbutton" type="submit"> n e w 스 토 리 등 록</button>
+			</form>
+		</div>
+		
+		
+		<div class="myStory">
+			<div class="storycontent">
+				<p>"재미있는 이야기야~!!!"</p>
+			</div>
+			<div class="storydelete">
+				<button class="regbutton" type="button" id="storydelete">삭제</button>
+			</div>
+		</div>
+		
+	</div>
+	<!-- LAST PAGE -->
+
+
+	<section id="loginpage">
+		<div id="flipper">
+			<div class="FRONTCARD">
+				<div id="piggy"></div>
+				<div id="logotext"></div>
+				<div class="flipinfo" id="info"></div>
+				<div id="secondenter"></div>
+				<div id="preloader"></div>
+				<div id="wrapper">
+					<!-- LOG IN FORMS -->
+					<div id="cube">
+						<form action="user/login" id="auth" method="post"
+							autocomplete="off">
+							<div class="side" id="side1">
+								<div id="backlogin"></div>
+								<div id="enter"></div>
+								<input class="frontforms" id="frontloginform" name="username"
+									placeholder="enter your login" type="text" autocomplete="off" />
+							</div>
+							<div class="side" id="side2">
+								<div id="backpassword"></div>
+								<input class="frontforms" id="frontpasswordform" name="password"
+									placeholder="password" type="password" autocomplete="off" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="fliptext">
+					Or <a href="#">create new account</a>
+				</div>
+			</div>
+
+			<div class="BACKCARD">
+				<div id="regpage">
+					<div id="franklin">
+						<div class="avatar"></div>
+					</div>
+					<div id="createaccount"></div>
+					<div class="fliptext">
+						Or <a href="#">use existing account</a>
+					</div>
+					<div id="registrationforms">
+						<form id="signup" autocomplete="off">
+							<input class="backforms" name="username" id="backloginform" placeholder=" id" type="text" />
+							<br> 
+							<input class="backforms" name="password" id="backpasswordform" placeholder=" password" type="password" />
+							<br> 
+							<input class="backforms" name="name" id="backnameform" placeholder=" name" type="text" />
+							<br> 
+							<input class="backforms" name="email" id="backemailform" placeholder="email" type="text" />
+							<button class="regbutton" type="submit" name="registration">r e g i s t e r</button>
+						</form>
+					</div>
+					<div id="regcomplete">
+						<span class="regthanks">가입해주셔서 감사합니다.<br> <span
+							class="regthankssmall"> </span>
+						</span>
+						<div id="mvmain">
+							<a href="#">홈으로 이동</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/touchscreens.js"></script>
+	<script src="js/lib/extrascripts.js"></script>
+
+	<script src="js/dashboard.js" charset="utf-8"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/login.js" charset="utf-8"></script>
+	<script src="js/launch.js" charset="utf-8"></script>
+
+</body>
+</html>
